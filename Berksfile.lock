@@ -1,0 +1,79 @@
+DEPENDENCIES
+  anaconda
+  anaconda_wrapper
+    path: ../cookbooks/anaconda_wrapper
+  apt
+  build-essential
+  dotfiles
+    path: ../cookbooks/dotfiles
+  git
+  java
+  ntp
+  omnibus_updater
+  rvm
+    git: git://github.com/martinisoft/chef-rvm.git
+    revision: eddd733694a1d3e0872f5692e8dda93aa2752791
+  scala
+  simple-scala-sbt
+
+GRAPH
+  anaconda (0.6.2)
+    apt (>= 0.0.0)
+    bzip2 (>= 0.0.0)
+    runit (>= 0.0.0)
+    tar (>= 0.0.0)
+  anaconda_wrapper (0.1.0)
+  apt (4.0.2)
+    compat_resource (>= 12.10)
+  ark (1.2.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  build-essential (6.0.4)
+    compat_resource (>= 12.10)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  bzip2 (0.1.0)
+  chef_gem (0.1.0)
+  chef_handler (1.4.0)
+  compat_resource (12.10.7)
+  dmg (2.4.0)
+  dotfiles (0.1.0)
+    git (>= 0.0.0)
+  git (4.6.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  homebrew (2.1.0)
+    build-essential (>= 2.1.2)
+  java (1.42.0)
+    apt (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    windows (>= 0.0.0)
+  mingw (1.2.4)
+    compat_resource (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  ntp (2.0.0)
+    windows (>= 1.38.0)
+  omnibus_updater (2.0.0)
+  packagecloud (0.2.5)
+  runit (1.8.0)
+    packagecloud (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  rvm (0.10.1)
+    chef_gem (>= 0.0.0)
+    java (>= 0.0.0)
+  scala (2.1.0)
+    ark (>= 0.0.0)
+    java (>= 0.0.0)
+  seven_zip (2.0.1)
+    windows (>= 1.2.2)
+  simple-scala-sbt (1.0.0)
+    apt (>= 0.0.0)
+  tar (0.7.0)
+  windows (1.44.3)
+    chef_handler (>= 0.0.0)
+  yum (3.11.0)
+  yum-epel (0.7.1)
+    yum (>= 3.6.3)
