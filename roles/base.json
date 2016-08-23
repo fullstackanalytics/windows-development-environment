@@ -21,8 +21,8 @@
     ],
     "default_attributes": {
         "rvm": {
-            "ubuntu": {
-            "rubies": ["stable"]
+            "vagrant": {
+	        "rubies": ["stable"]
             }
         },
         "ubuntu": {
