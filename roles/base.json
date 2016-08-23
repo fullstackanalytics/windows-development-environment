@@ -10,11 +10,13 @@
         "recipe[git]",
         "recipe[rvm::user]",
         "recipe[java]",
+        "recipe[java]",
         "recipe[scala]",
         "recipe[simple-scala-sbt]",
         "recipe[anaconda]",
         "recipe[anaconda::shell_conveniences]",
         "recipe[anaconda_wrapper::default]",
+	"recipe[postgresql::client]",
         "recipe[dotfiles]"
     ],
     "default_attributes": {
@@ -29,28 +31,29 @@
         "dotfiles": {
             "users":  [
             {
-                "user_name": "ubuntu",
+                "user_name": "vagrant",
                 "git_url": "https://github.com/namabile/dotfiles.git",
                 "files_to_use": [".tmux.conf", ".vimrc", ".gitconfig", ".bashrc", "git/git-prompt.sh", "git/git-completion.bash"]
             }
             ]
         },
         "anaconda": {
-            "owner": "ubuntu",
-            "group": "ubuntu",
+            "owner": "vagrant",
+            "group": "vagrant",
             "flavor": "x86_64",
             "accept_license": "yes"
         },
         "java": {
             "install_flavor": "oracle",
             "jdk_version": "8",
+	    "set_etc_environment": true,
             "oracle": {
                 "accept_oracle_download_terms": true
             }
         },
         "scala": {
-            "version": "2.11.6",
-            "checksum": "41ba45e4600404634217a66d6b2c960459d3a67e0344a7c3d9642d0eaa446583"
+            "version": "2.11.8",
+            "checksum": "87fc86a19d9725edb5fd9866c5ee9424cdb2cd86b767f1bb7d47313e8e391ace"
         }
     }
 }

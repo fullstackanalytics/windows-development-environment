@@ -10,6 +10,7 @@ DEPENDENCIES
   java
   ntp
   omnibus_updater
+  postgresql
   rvm
     git: git://github.com/martinisoft/chef-rvm.git
     revision: eddd733694a1d3e0872f5692e8dda93aa2752791
@@ -34,6 +35,7 @@ GRAPH
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
   bzip2 (0.1.0)
+  chef-sugar (3.4.0)
   chef_gem (0.1.0)
   chef_handler (1.4.0)
   compat_resource (12.10.7)
@@ -57,7 +59,13 @@ GRAPH
   ntp (2.0.0)
     windows (>= 1.38.0)
   omnibus_updater (2.0.0)
+  openssl (4.4.0)
+    chef-sugar (>= 3.1.1)
   packagecloud (0.2.5)
+  postgresql (4.0.6)
+    apt (>= 1.9.0)
+    build-essential (>= 0.0.0)
+    openssl (~> 4.0)
   runit (1.8.0)
     packagecloud (>= 0.0.0)
     yum-epel (>= 0.0.0)
