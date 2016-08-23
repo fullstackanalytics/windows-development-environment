@@ -7,6 +7,12 @@ Install Cygwin with packages:
 - git
 - tmux
 - vim
+- inconsolata fonts
+- mintty
+
+### Mintty
+
+Grab the `.minttyrc` file from the dotfiles repo.
 
 ## Other Development Tools
 
