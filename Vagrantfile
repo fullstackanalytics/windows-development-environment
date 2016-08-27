@@ -1,13 +1,16 @@
 Vagrant.configure("2") do |config|
-
+ 
   config.vm.hostname = "fsa"
   config.vm.box = "ubuntu_1404"
   config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
 
   config.vm.network :private_network, ip: "33.33.33.10"
   
+  config.vm.synced_folder "~/development", "/home/vagrant/development"
+  config.vm.define "fsa-dev"
+
   config.vm.provider "virtualbox" do |v|
-    v.name = "ubuntu-dev"
+    v.name = "fsa-dev"
     v.memory = 3072
     v.cpus = 2
   end
