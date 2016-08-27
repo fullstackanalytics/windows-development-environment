@@ -31,7 +31,9 @@ alias chef="c:/\opscode/\chefdk/\bin/\chef"
 alias berks="c:/\opscode/\chefdk/\bin/\berks"
 ```
 
-Install Vagrant Berkshelf plugin: `vagrant plugin install vagrant-berkshelf`.
+Install Vagrant plugins: 
+- `vagrant plugin install vagrant-berkshelf`
+- `vagrant plugin install vagrant-scp`
 
 ## Chef recipes
 
@@ -44,3 +46,7 @@ Run `berks install`.
 - Slack
 - Google Drive
 - Dashlane
+
+## PgPass File
+
+Set create `~/.pgpass` file for storing postgres and redshift passwords. Ensure the file has `0600` mode premssions.
