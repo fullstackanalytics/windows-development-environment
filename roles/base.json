@@ -17,7 +17,8 @@
         "recipe[anaconda::shell_conveniences]",
         "recipe[anaconda_wrapper::default]",
 	"recipe[postgresql::client]",
-        "recipe[dotfiles]"
+        "recipe[dotfiles]",
+	"recipe[golang]"
     ],
     "default_attributes": {
         "rvm": {
